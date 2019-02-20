@@ -1,0 +1,54 @@
+body {
+	background-color: #FDFFFC;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	margin: 0;
+	min-height: 100px;
+	padding: 0;
+	width: 400px;
+}
+
+h1 {
+	font-family: 'Menlo', 'monospace';
+	font-size: 22px;
+	font-weight: 400;
+	margin: 0;
+	color: #00A698;
+}
+
+a:link, a:visited {
+	color: #E47675;
+	outline: 0;
+	text-decoration: none;
+}
+
+img {
+	width: 30px;
+}
+
+.footerWrap {
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+}
+
+.footer {
+    width: 400px;
+    margin: auto;
+}
+
+.footerContent {
+    float: left;
+    width: 100%;
+    color: #E47675;
+    font-size: 9px;
+    padding: 5px 0;
+}
+
+.footer p {
+	float:left; 
+	width:100%; 
+	text-align:center; 
+}
+
+
