@@ -1,54 +1,84 @@
 body {
-	background-color: #FDFFFC;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 14px;
-	margin: 0;
+	font-family: 'Dosis', sans-serif;
+	font-size: 12px;
+	margin: 5px;
 	min-height: 100px;
 	padding: 0;
-	width: 400px;
+	width: 300px;
 }
 
-h1 {
-	font-family: 'Menlo', 'monospace';
-	font-size: 22px;
-	font-weight: 400;
-	margin: 0;
-	color: #00A698;
+footer {
+	font-size: 9px;
+	text-align: center;
 }
 
-a:link, a:visited {
-	color: #E47675;
-	outline: 0;
-	text-decoration: none;
-}
-
-img {
+.logo {
 	width: 30px;
+	border: 3px solid #fff;
 }
 
-.footerWrap {
-    width: 100%;
-    position: fixed;
-    bottom: 0px;
+
+.launcher-icons {
+	display: inline-grid;
+	background-color: #FFF;
+	border-radius: 5px;
+	width: 32px;
+	height: 32px;
+	overflow: hidden;
+	margin: 5px;
 }
 
-.footer {
-    width: 400px;
-    margin: auto;
+
+.wrapper {
+	display: grid;
+	align-content: center;
+	justify-content: center;
+  grid-template-columns: 250px;
+  grid-gap: 5px;
+  padding-right: 10px;
+	background-color: #E47675;
+	border: none;
+	border-radius: 5px;
+	grid-template-areas: 
+		"header"
+		"content"
+		"description"
+		"footer"
 }
 
-.footerContent {
-    float: left;
-    width: 100%;
-    color: #E47675;
-    font-size: 9px;
-    padding: 5px 0;
+span {
+	font-size: 22px;
+	font-weight: 500;
+	color: #fff;
+	margin-left: 5px;
+	position: relative;
+	top: -8px;
+	letter-spacing: .5px;
 }
 
-.footer p {
-	float:left; 
-	width:100%; 
-	text-align:center; 
+header {
+	grid-area: header;
+	display: grid;
 }
 
+.content {
+	grid-area: content;
+	padding-left: 5px;
+}
+
+.description {
+	grid-area: description;
+	display: grid;
+	font-weight: 400;
+	letter-spacing: 1.5px;
+	color: #fff;
+	text-align: center;
+}
+
+footer {
+	grid-area: footer;
+	color: rgba(255, 255, 255, .8);
+	letter-spacing: 1.2px;
+	padding-bottom: 5px;
+}
 
